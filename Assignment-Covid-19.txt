@@ -1,0 +1,9 @@
+age =  False if input("Are you a cigarette addict older than 75 years old? (Yes or No): ").lower() == 'no' else True
+chronic =  False if input("Do you have a severe chronic disease? (Yes or No): ").lower() == 'no' else True
+immune = False if input("Is your immune system too weak? (Yes or No): ").lower() == 'no' else True
+list = [age, chronic, immune]
+# print(list)
+if list.count(True) > 0:
+    print("There is a risk of death.")
+else:
+    print("There is not a risk of death.")
